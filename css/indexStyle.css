@@ -1,0 +1,343 @@
+:root{
+    --main-color-green: rgb(129, 178, 20);
+    --font-color-one: rgb(198, 220, 149);
+    --black-fade-20:rgba(0,0,0,0.2);
+}
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: 0;
+}
+header{
+    padding: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+section{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: large;
+}
+p{
+    text-indent: 10px;
+}
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    background-color: var(--main-color-green);
+    padding: 25px;
+    margin: 0;
+}
+br{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*
+---------Clases---------
+*/
+
+/*Cabecera*/
+header .total-head{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    height: 300px;
+}
+header .head{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+}
+header .logo{
+    justify-self: end;
+    margin: 0;
+    padding: 0;
+}
+
+header .cev-init{
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    color: var(--font-color-one);
+}
+
+.cev-init p{
+    text-align: center;
+    font-size: large;
+    color: white;
+
+}
+
+
+/*Contenido*/
+.extern-hr{
+    width: 60%;
+}
+.divition{
+    margin: 0;
+    width: 100%;
+    background-image: none;
+    background-color: rgba(0,0,0,0.5);
+}
+section .title{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: rgba(0,0,0,0.8);
+}
+section .content{
+    text-align: justify;
+    color: rgba(0,0,0,0.7);
+}
+section.mision-vision{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+}
+section.under-content{
+    width: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+button.link{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 250px;
+    background-color: var(--font-color-one);
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+button.link:hover{
+    background-color: var(--main-color-green);
+    color: rgba(0,0,0,0.7);
+}
+.ligas{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.5);
+    font-weight: normal;
+    font-size: medium;
+    transition: 0.3s;
+}
+.ligas:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.8);
+    font-weight: normal;
+}
+.button-courses button{
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    padding: 15px;
+    width: 250px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(92, 92, 92);
+    transition: 0.3s ease;
+}
+.button-courses button:hover{
+    background-color: var(--font-color-one);
+    color: rgba(0,0,0,0.85);
+}
+
+/*Contacto*/
+.contact .title{
+    font-size: xx-large;
+}
+.contact fieldset{
+    max-width: 500px;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+form label, input{
+    display: block;
+    margin: auto;
+}
+form label{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(50,50,50);
+    margin: 20px 0;
+}
+form input{
+    padding: 10px;
+    margin: 10px auto;
+    color: rgb(50,50,50);
+    border: solid 1px rgb(120, 120, 120);
+    border-radius: 10px;
+}
+form button{
+    display: block;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.2);
+    font-size: medium;
+    transition: 0.3s ease;
+}
+form button:hover{
+    background-color: rgba(0,0,0,0.25);
+}
+/*CartasOfertas*/
+.cardM{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    text-align: center;
+}
+.cardM .card-title{
+    font-size: x-large;
+}
+.content-cert .card{
+    border: solid 1px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    padding-bottom: 0;
+}
+.content-cert{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.content-cert .card-title{
+    text-align: center;
+    font-size: x-large;
+    min-height: 180px;
+    font-weight: bold;
+}
+.content-cert .card-content{
+    text-align: justify;
+    min-height: 300px;
+    padding: 20px;
+}
+.card img{
+    display: block;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+
+/*Footer*/
+footer .contact{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    column-gap: 20px;
+}
+footer .image{
+    justify-self: end;
+    padding: 4px 0;
+}
+footer .contact-content{
+    font-size: large;
+    align-self: center;
+}
+body .whatsapp{
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    transition: 0.3s ease;
+}
+body .whatsapp:hover{
+    transform: scale(1.05);
+}
+/*navbar*/
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: large;
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+}
+nav .nav-item{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+nav .act{
+    background-color: var(--main-color-green);
+}
+nav .nav-item:hover{
+    background-color: var(--black-fade-20);
+}
+.nav-item a{
+    text-decoration: none;
+
+    padding: 10px;
+}
+
+/*
+---------Media Querys---------
+*/
+@media( max-width: 720px ){
+    header{
+        padding: 0;
+    }
+    header .head{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .head .cev-init{
+        font-size: 50px;
+    }
+    header .logo{
+        height: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+    section{
+        width: 80%;
+    }
+    section.mision-vision{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .extern-hr{
+        width: 80%;
+    }
+    footer .contact{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        column-gap: 20px;
+    }
+    .content-cert{
+        grid-template-columns: 1fr;
+    }
+    nav{
+        grid-template-columns: 1fr;
+        background-color: var(--black-fade-20);
+    }
+}

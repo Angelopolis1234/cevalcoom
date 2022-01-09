@@ -1,0 +1,181 @@
+:root{
+    --main-color-green: rgb(129, 178, 20);
+    --main-color-green-25: rgba(129, 178, 20,0.25);
+    --black-fade-:rgba(0,0,0,0.5);
+    --black-fade-20:rgba(0,0,0,0.2);
+    --font-color-one: rgb(198, 220, 149);
+    --font-color-one: rgb(198, 220, 149);
+}
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+}
+header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-size: large;
+    margin: 0;
+    background-color: rgb(204, 204, 204);
+}
+
+footer{
+    background-color: var(--main-color-green);
+    padding: 25px;
+    margin: 0;
+}
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+}
+
+/*Calses*/
+header .ceval-init{
+    opacity: 1;
+    font-size: 80px;
+    color: white;
+    font-weight: bolder;
+}
+header .container-head{
+    width: 100%;
+    background-color: var(--black-fade-);
+    color: white;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.container-head .welcome{
+    font-size: 40px;
+    align-self: start;
+}
+
+/*navbar*/
+nav .nav-item{
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
+    transition: 0.3s;
+}
+nav .nav-item:hover{
+    background-color: var(--black-fade-20);
+}
+.nav-item a{
+    text-decoration: none;
+    padding: 10px;
+}
+nav .act{
+    background-color: var(--main-color-green);
+}
+body .content-gral{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+nav button{
+    width: 100%;
+}
+/*Contenido*/
+.content-gral{
+    color: rgb(120, 120, 120);
+}
+.content-gral .title{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(50,50,50);
+}
+.content-gral .sub-title{
+    font-size: x-large;
+    color: rgb(70,70,70);
+}
+
+/*Llamada a la accion*/
+.me-certifico{
+    width: 60%;
+    padding: 10px;
+    margin: 25px auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--main-color-green);
+}
+.me-certifico button{
+    display: block;
+    padding: 15px;
+    background-color: var(--main-color-green);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: x-large;
+    margin: 10px auto;
+    transition: 0.3s ease;
+}
+.me-certifico button:hover{
+    transform: scale(1.05);
+}
+
+/*footer*/
+footer .contact{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+    width: 30%;
+    margin: auto;
+    column-gap: 20px;
+}
+footer .image{
+    justify-self: end;
+    padding: 4px 0;
+}
+footer .contact-content{
+    font-size: large;
+    align-self: center;
+}
+body .whatsapp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.3s ease;
+}
+body .whatsapp:hover{
+    transform: scale(1.05);
+}
+
+/*Media Querys*/
+
+@media(max-width: 720px){
+    header .ceval-init{
+        font-size: 50px;
+    }
+    .container-head .welcome{
+        font-size: xx-large;
+    }
+    nav{
+        grid-template-columns: 1fr;
+        background-color: var(--black-fade-20);
+    }
+    body .content-gral{
+        width: 80%;
+        margin: auto;
+    }
+    footer .contact{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+        column-gap: 20px;
+    }
+}
