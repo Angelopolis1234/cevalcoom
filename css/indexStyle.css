@@ -162,6 +162,10 @@ button.link:hover{
 }
 
 /*Contacto*/
+.contact-form{
+    width: 60%;
+    margin: 25px auto;
+}
 .contact .title{
     font-size: xx-large;
 }
@@ -339,5 +343,9 @@ nav .nav-item:hover{
     nav{
         grid-template-columns: 1fr;
         background-color: var(--black-fade-20);
+    }
+    .contact-form{
+        width: 80%;
+        margin: 25px auto;
     }
 }
