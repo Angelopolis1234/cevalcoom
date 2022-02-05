@@ -1,0 +1,166 @@
+/*FALTA LA TIPOGRAFIA*/
+:root{
+    --main-color-green: rgb(129, 178, 20);
+    --main-color-green-25: rgba(129, 178, 20,0.25);
+    --black-fade-:rgba(0,0,0,0.65);
+    --black-fade-20:rgba(0,0,0,0.2);
+    --font-color-one: rgb(198, 220, 149);
+    --font-color-one: rgb(198, 220, 149);
+}
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+}
+/*Cabecera*/
+.logos-head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 25px auto;
+}
+header h1, p.title{
+    font-size: 60px;
+    text-align: center;
+    font-weight: normal;
+    margin: 25px auto;
+    color: rgba(0,0,0,0.8);
+}
+header p.title{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgba(0,0,0,0.8);
+}
+header p{
+    text-align: center;
+    color: var(--main-color-green);
+    font-size: large;
+    font-weight: bolder;
+}
+
+/*Contenido del sitio*/
+div.image-bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section.content-bdy{
+    padding: 50px 5px;
+    margin: 0;
+    text-align: center;
+    background-color: var(--black-fade-);
+}
+section.content-bdy strong{
+    font-size: 60px;
+    color: var(--main-color-green);
+}
+section.content-bdy .subtitle-gral{
+    font-size: 40px;
+    color: white;
+}
+section.content-bdy p.content-gral{
+    font-size: x-large;
+    color: var(--font-color-one);
+    font-weight: bolder;
+}
+div.content{
+    width: 60%;
+    margin: 25px auto;
+}
+div.content .title{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: var(--main-color-green);
+}
+div.content .mount, strong{
+    color: var(--main-color-green);
+    text-align: center;
+    font-size: larger;
+}
+div.content p{
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+    font-size: larger;
+}
+.learn-bg{
+    background-color: var(--black-fade-20);
+    padding: 25px 0;
+}
+.learn-content{
+    width: 60%;
+    margin: auto;
+}
+.learn-content li{
+    list-style: none;
+    font-size: xx-large;
+}
+.learn-content li::before{
+    content: "✅  ";
+}
+
+/*Contadores*/
+div.content-counter{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 60%;
+    margin: 25px auto;
+    background-color: var(--black-fade-);
+    padding: 25px 0;
+    border: none;
+    border-bottom: solid 3px var(--main-color-green);
+    border-radius: 25px;
+    box-shadow: 0px 10px 10px var(--black-fade-);
+}
+div.content-counter p{
+    margin: 0;
+    padding: 0;
+}
+div.content-counter .numbers, .names{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-weight: bolder;
+}
+div.content-counter .numbers{
+    font-size: 75px;
+    color: var(--main-color-green);
+}
+div.content-counter .names{
+    font-size: xx-large;
+    color: var(--font-color-one);
+}
+@media( max-width: 720px ){
+    .logos-head{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    header h1{
+        font-size: 40px;
+    }
+    div.content{
+        width: 80%;
+    }
+    div.content-counter .numbers{
+        font-size: xx-large;
+    }
+    div.content-counter .names{
+        font-size: medium;
+    }
+    div.content-counter{
+        width: 100%;
+        border-radius: 0;
+    }
+    .learn-content{
+        width: 80%;
+    }
+}

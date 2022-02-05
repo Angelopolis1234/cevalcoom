@@ -1,0 +1,90 @@
+:root{
+    --main-color-green: rgb(129, 178, 20);
+    --main-color-green-25: rgba(129, 178, 20,0.25);
+    --black-fade-:rgba(0,0,0,0.65);
+    --black-fade-20:rgba(0,0,0,0.2);
+    --font-color-one: rgb(198, 220, 149);
+}
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+}
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    color: var(--black-fade-);
+}
+strong{
+    color: rgba(0,0,0,0.80);
+}
+.logos-head{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin: 25px auto;
+}
+section.contentgral{
+    width: 60%;
+    margin: 50px auto;
+    text-align: center;
+}
+section.contentgral p.title{
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+section.contentgral h1{
+    font-size: 60px;
+    font-weight: bolder;
+    margin-top: 25px;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+section.contentgral section.instructions{
+    margin: 25px auto;
+    font-size: xx-large;
+    text-align: initial;
+}
+button{
+    padding: 25px;
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    font-size: xx-large;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color-green);
+    color: white;
+    transition: 0.3s ease;
+}
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 10px 10px var(--black-fade-20);
+}
+a{
+    text-decoration: none;
+}
+
+/*Responsive*/
+@media( max-width: 720px ){
+    .logos-head{
+        grid-template-columns: 1fr;
+        row-gap: 25px;
+    }
+    section.contentgral{
+        width: 80%;
+    }
+    section.contentgral h1{
+        font-size: 50px;
+    }
+    section.contentgral section.instructions{
+        text-align: center;
+    }
+}
