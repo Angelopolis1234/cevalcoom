@@ -1,0 +1,28 @@
+:root{
+    --main-color-green: rgb(129, 178, 20);
+    --main-color-green-25: rgba(129, 178, 20,0.25);
+    --black-fade-:rgba(0,0,0,0.65);
+    --black-fade-20:rgba(0,0,0,0.2);
+    --font-color-one: rgb(198, 220, 149);
+}
+
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: auto;
+    padding: 5%;
+    font-size: xx-large;
+    color: var(--black-fade-);
+}
+
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+}
+p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
