@@ -192,7 +192,7 @@ section.popup{
     visibility: hidden;
 }
 section.popup .contentpop{
-    max-width: 600px;
+    width: 800px;
     display: block;
     margin: 50px auto;
 }
@@ -285,10 +285,28 @@ div.content-counter .names{
         column-gap: 20px;
     }
     section.popup .contentpop{
-        max-width: 250px;
+        max-width: 90%;
+        margin-left: 2.5%;
+        margin-top: 30px;
     }
     .close-popup{
         left: 47%;
+        background-color: rgb(255, 81, 0);
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 8px 15px;
+        font-size: large;
+        text-align: initial;
+        font-weight: bolder;
+        color: white;
+        display: block;
+        margin: auto;
+        position: absolute;
+        z-index: 1;
+        left: calc(50% - 20px);
+        top: 5px;
     }
     .who{
         width: 80%;
