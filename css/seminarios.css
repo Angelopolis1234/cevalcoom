@@ -44,6 +44,22 @@ header{
     background-repeat: no-repeat;
     background-position: center;
 }
+.title-header{
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    width: 80%;
+    margin: 25px auto;
+    column-gap: 10px;
+    row-gap: 25px;
+}
+.title-header .logo{
+    justify-self: end;
+}
+.title-header .content{
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+}
 .display{
     background-color: var(--black-fade-);
     margin: 0;
@@ -65,6 +81,25 @@ header{
 section.content-bdy{
     width: 80%;
     margin: 25px auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    border-radius: 25px;
+    background-color: red;
+}
+.content-bdy .red{
+    color: white;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    align-self: center;
+}
+.content-bdy .content{
+    background-color: var(--font-color-one);
+    border-radius: 0px 20px 20px 0px;
+    padding: 10px;
+    color: rgba(0,0,0,0.75);
 }
 .card{
     padding: 20px 5px;
@@ -191,31 +226,6 @@ section.popup{
     background-color: rgba(0,0,0,0.75);
     visibility: hidden;
 }
-section.popup .contentpop{
-    width: 800px;
-    display: block;
-    margin: 50px auto;
-}
-section.active{
-    visibility: visible;
-}
-.close-popup{
-    background-color: rgb(255, 81, 0);
-    border: none;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    padding: 8px 15px;
-    font-size: xx-large;
-    font-weight: bolder;
-    color: white;
-    display: block;
-    margin: auto;
-    position: absolute;
-    z-index: 1;
-    left: calc(50% - 20px);
-    top: 5px;
-}
 
 /*Contadores*/
 div.content-counter{
@@ -261,8 +271,20 @@ div.content-counter .names{
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(0,0,0,0.65);
 }
+.quest{
+    width: 75%;
+    margin: 25px auto;
+}
 
 @media( max-width: 720px ){
+    .title-header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+    .title-header .logo{
+        justify-self: center;
+    }
     .display h1{
         font-size: xx-large;
     }
@@ -275,6 +297,9 @@ div.content-counter .names{
     }
     .presentation{
         grid-template-columns: 1fr;
+    }
+    .presentation p{
+        font-size: large;
     }
     footer .contact{
         display: grid;
@@ -289,24 +314,20 @@ div.content-counter .names{
         margin-left: 2.5%;
         margin-top: 30px;
     }
-    .close-popup{
-        left: 47%;
-        background-color: rgb(255, 81, 0);
-        border: none;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        padding: 8px 15px;
+    section.content-bdy{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .content-bdy .content{
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
         font-size: large;
-        text-align: initial;
-        font-weight: bolder;
-        color: white;
-        display: block;
-        margin: auto;
-        position: absolute;
-        z-index: 1;
-        left: calc(50% - 20px);
-        top: 5px;
+        padding: 10px;
+    }
+    .content-bdy .red{
+        padding: 0px;
+        font-size: 40px;
     }
     .who{
         width: 80%;
