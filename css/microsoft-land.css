@@ -1,0 +1,309 @@
+:root{
+    --main-color-green: rgb(0, 93, 47);
+    --main-color-green-25: rgba(129, 178, 20,0.25);
+    --black-fade-:rgba(0,0,0,0.65);
+    --black-fade-20:rgba(0,0,0,0.2);
+    --font-color-one: rgb(198, 220, 149);
+}
+hr{
+    border:none;
+    width: 100%;
+    background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
+    height: 2px;
+}
+body{
+    font-family: 'Montserrat',Century Gothic, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    color: var(--black-fade-);
+}
+
+header .logos-head{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+header .phone{
+    display: block;
+    height: 0;
+    padding: 0;
+    width: 90%;
+    margin: auto;
+    visibility: hidden;
+}
+.logos-head img{
+    width: 70%;
+}
+.logos-head .retoAcadLog{
+    width: 50%;
+}
+
+h1, h2, h3{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.verde{
+    background-color: var(--main-color-green);
+    color: white;
+    padding: 40px 0px;
+}
+.verde .first{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 15px;
+    padding: 15px;
+}
+.container-req{
+    width: 90%;
+    margin: 0 4%;
+    padding: 0;
+}
+.container-req div{
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------------------------------SECCIÓN NEGRA--------------------------------*/
+.black{
+    background-color: black;
+    color: white;
+    padding: 40px 0px;
+}
+.black .sesiones-black{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    justify-items: center;
+    padding: 25px 0px;
+}
+.sesiones-black .sesion{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding: 25px 0px;
+}
+.sesion img{
+    width: 80%;
+}
+.sesion .sesion-number{
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(206, 232, 255);
+    padding: 0px;
+    margin: 10px 0px;
+}
+.sesion .sesion-day{
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+}
+/*Imágenes banderas*/
+.desktop-flags{
+    width: 80%;
+}
+.mobile-flags{
+    height: 0px;
+    width: 0px;
+}
+
+/*--------------------------------INVITADOS--------------------------------*/
+.instructores{
+    padding: 25px 0px;
+}
+
+.guest-cards{
+    max-width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    padding: 25px 0px;
+    margin: auto;
+    gap: 10px;
+}
+.guest-cards img{
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.guest-cards .card{
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin: 0;
+    padding: 10px 0px;
+    max-height: 800px;
+}
+.card p{
+    margin: 10px 0px;
+    padding: 0px;
+}
+.card .nombre{
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+.card .cargo{
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.verde-final{
+    background-color: var(--main-color-green);
+    text-align: center;
+    color: white;
+}
+.verde-final h2, p{
+    padding: 25px 0px;
+}
+.verde-final .negro p.tam{
+    margin: 0px;
+    font-size: 6vw;
+    font-weight: bolder;
+}
+.verde-final img{
+    width: 60%;
+}
+.verde-final .negro{
+    background-color: black;
+    padding-bottom: 25px;
+}
+
+/*FOOTHER*/
+.foother{
+    background-color: var(--main-color-green);
+}
+.foother .logos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+}
+.logos img{
+    width: 50%;
+}
+.derechos .top{
+    font-size: large;
+    padding: 10px 0;
+    font-weight: bolder;
+    margin: 0;
+}
+.derechos .botom{
+    font-size: medium;
+    padding: 10px 0;
+    margin: 0;
+}
+.botom a{
+    text-decoration: underline;
+    color: black;
+}
+
+/*--------------------------------CONTADORES--------------------------------*/
+.content-counter{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.content-counter .numbers{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    font-size: 80px;
+    font-weight: bolder;
+}
+.content-counter .names{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: large;
+}
+.names p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media( max-width: 1024px ){
+    header .logos-head{
+        height: 0;
+        padding: 0;
+        visibility: hidden;
+    }
+    header .phone{
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: auto;
+        visibility: visible;
+    }
+    .verde{
+        padding: 40px 0px;
+    }
+    .verde .first{
+        grid-template-columns: 1fr;
+        padding: 0px;
+    }
+    .video iframe{
+        width: 100%;
+        height: auto;
+    }
+    .video{
+        margin: auto;
+    }
+    .container-req{
+        margin: 0px 2%;
+    }
+
+    /*SECCIÓN NEGRO*/
+    .black .sesiones-black{
+        grid-template-columns: 1fr;
+    }
+    /*banderas*/
+    .desktop-flags{
+        height: 0px;
+        width: 0px;
+    }
+    .mobile-flags{
+        width: 80%;
+        height: auto;        
+    }
+
+    /*INVITADOS*/
+    .guest-cards{
+        max-width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .guest-cards .card{
+        margin: 0;
+    }
+
+    /*CONTADORES*/
+    .content-counter .numbers{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+    .content-counter .names{
+        font-size: small;
+    }
+    .content-counter .numbers, .content-counter .names{
+        width: 90%;
+    }
+}
