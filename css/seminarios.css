@@ -82,13 +82,12 @@ section.content-bdy{
     width: 80%;
     margin: 25px auto;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr;
     border-radius: 25px;
-    background-color: red;
 }
 .content-bdy .red{
-    color: white;
-    font-size: xx-large;
+    color: rgba(0,0,0,0.75);
+    font-size: 40px;
     font-weight: bolder;
     padding: 10px;
     text-align: center;
@@ -97,7 +96,7 @@ section.content-bdy{
 }
 .content-bdy .content{
     background-color: var(--font-color-one);
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px;
     padding: 10px;
     color: rgba(0,0,0,0.75);
 }
