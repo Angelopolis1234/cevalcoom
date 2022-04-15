@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 var end = new Date('4/20/2022 7:00 PM');
-=======
-var end = new Date('4/1/2022 7:00 PM');
->>>>>>> 35bb011d03934d5760bd1d1ffc864804ec3a01be
-
     var _second = 1000;
     var _minute = _second * 60;
     var _hour = _minute * 60;
