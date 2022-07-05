@@ -4,347 +4,91 @@
     --black-fade-:rgba(0,0,0,0.65);
     --black-fade-20:rgba(0,0,0,0.2);
     --font-color-one: rgb(198, 220, 149);
+    --font-family-text: 'Montserrat',Century Gothic, sans-serif;
+    --font-family-titles: 'Poppins', sans-serif;
 }
 hr{
     border:none;
     width: 100%;
     background-image: linear-gradient(90deg,var(--main-color-green), yellow, red);
-    height: 2px;
+    height: 3px;
+    margin: 0;
 }
 body{
-    font-family: 'Montserrat',Century Gothic, sans-serif;
+    font-family: var(--font-family-text);
     margin: 0;
     padding: 0;
-    font-size: xx-large;
-}
-button.btn-action{
-    display: block;
-    padding: 25px;
-    border: none;
-    margin: 50px auto;
-    background-color: var(--main-color-green);
-    font-size: x-large;
-    max-width: 400px;
-    border-radius: 25px;
-    font-weight: bolder;
-    transition: 0.3s ease;
-    color: white;
-}
-button.btn-action:hover{
-    transform: scale(1.05);
-    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
-}
-/*
---------------------------Clases--------------------------
-*7
-/*Cabecera*/
-header{
-    margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.title-header{
-    display: grid;
-    grid-template-columns: 1fr 9fr;
-    width: 80%;
-    margin: 25px auto;
-    column-gap: 10px;
-    row-gap: 25px;
-}
-.title-header .logo{
-    justify-self: end;
-}
-.title-header .content{
-    font-size: larger;
-    font-weight: bolder;
-    color: white;
-}
-.display{
-    background-color: var(--black-fade-);
-    margin: 0;
-    padding: 20px 10px;
-}
-.display h1{
-    font-size: 60px;
     text-align: center;
-    color: white;
-    font-weight: bolder;
-}
-.display p{
-    font-size: larger;
-    text-align: center;
-    color: var(--font-color-one);
-    font-weight: bolder;
-}
-/*Contenido*/
-section.content-bdy{
-    width: 80%;
-    margin: 25px auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    border-radius: 25px;
-}
-.content-bdy .red{
-    color: rgba(0,0,0,0.75);
-    font-size: 40px;
-    font-weight: bolder;
-    padding: 10px;
-    text-align: center;
-    margin: 0;
-    align-self: center;
-}
-.content-bdy .content{
-    background-color: var(--font-color-one);
-    border-radius: 20px;
-    padding: 10px;
-    color: rgba(0,0,0,0.75);
-}
-.card{
-    padding: 20px 5px;
-    margin: 25px 0;
-}
-.card .card-title, .who-title{
-    font-size: xx-large;
-    font-weight: bolder;
-    text-align: center;
-}
-.card .card-content, .who-content{
-    font-size: xx-large;
-    text-align: center;
-}
-.sesiones{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 10px;
-}
-.sesiones .sesion{
-    background-color: rgba(0,0,0,0.05);
-    padding: 10px;
-    border-radius: 10px;
-}
-.sesion .sesion-title{
-    color: var(--main-color-green);
-    font-weight: bolder;
-    align-self: center;
-    font-size: xx-large;
-}
-.sesion .sesion-content{
-    font-weight: bold;
-}
-ul.arrow-items{
-    text-align: start;
-    list-style: none;
-}
-ul.arrow-items li{
-    margin: 15px auto;
-}
-ul.arrow-items li::before{
-    content: "✅  ";
-}
-.presentation{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    width: 80%;
-    margin: auto;
-    column-gap: 10px;
-}
-.presentation img{
-    align-self: center;
-    visibility: visible;
-}
-.presentation p{
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bolder;
-}
-.who-title, .who-content{
-    margin: 25px auto;
-}
-.who-content p{
-    font-weight: bold;
-    font-size: xx-large;
-}
-.who-content li{
-    text-align: start;
-}
-.who{
-    width: 60%;
-    margin:auto;
-}
-/*footer*/
-footer{
-    background-color: var(--main-color-green);
-    padding: 25px;
-    margin: 0;
-}
-footer .contact{
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    align-items: center;
-    width: 30%;
-    margin: auto;
-    column-gap: 20px;
-}
-footer .image{
-    justify-self: end;
-    padding: 4px 0;
-}
-footer .contact-content{
-    font-size: large;
-    align-self: center;
-}
-body .whatsapp{
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
-    transition: 0.3s ease;
-}
-.who-bg{
-    background-color: var(--black-fade-20);
-    width: 100%;
-    padding: 25px 0;
-}
-.logos-head{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    margin: 25px auto;
-}
-body .whatsapp:hover{
-    transform: scale(1.05);
-}
-section.popup{
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.75);
-    visibility: hidden;
 }
 
-/*Contadores*/
-div.content-counter{
-    display: grid;
-    grid-template-columns: 1fr;
+header{
     width: 80%;
-    margin: 25px auto;
-    background-color: var(--black-fade-);
-    padding: 25px 0;
-    border: none;
-    border-bottom: solid 3px var(--main-color-green);
-    border-radius: 25px;
-    box-shadow: 0px 10px 10px var(--black-fade-);
-}
-div.content-counter p{
-    margin: 0;
-    padding: 0;
-}
-div.content-counter .numbers, .names{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-items: center;
+    margin: auto;
+    text-align: center;
     font-weight: bolder;
 }
-div.content-counter .numbers{
-    font-size: 75px;
+header .img-header{
+    margin: 25px auto 0px auto;
+    width: fit-content;
+}
+
+h2{
+    font-size: x-large;
+}
+p{
+    font-size: large;
+}
+p.sub{
+    font-size: medium;
+}
+.content-dark p,
+.content-dark p.sub,
+ol{
+    color: white;
+    font-weight: bolder;
+}
+.content-dark h2{
     color: var(--main-color-green);
+    font-weight: bolder;
 }
-div.content-counter .names{
-    font-size: xx-large;
-    color: var(--font-color-one);
+.content,
+.cont{
+    width: 80%;
+    margin: auto;
 }
-/*Imagenes*/
-.sesiones img{
-    width: 90%;
-    margin: 25px auto;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+.content-dark{
+    background-color: var(--black-fade-);
+    padding: 15px 0px;
 }
-.presentation img{
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px rgba(0,0,0,0.65);
+footer p{
+    font-size: small;
 }
-.quest{
-    width: 90%;
-    margin: 25px auto;
-    justify-self: center;
+.dual{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card img{
+    width: 25%;
+}
+iframe{
+    width: 560px; 
+    height: 315px;
 }
 
 @media( max-width: 720px ){
-    .title-header{
-        grid-template-columns: 1fr;
-        justify-items: center;
-        text-align: center;
-    }
-    .title-header .logo{
-        justify-self: center;
-    }
-    .logo img{
-        height: 50px;
-    }
-    .display h1{
-        font-size: xx-large;
-    }
-    .display p{
-        font-size: larger;
-    }
-    .sesiones{
-        grid-template-columns: 1fr;
-        row-gap: 25px;
-    }
-    .presentation{
+    .dual, .cards{
         grid-template-columns: 1fr;
     }
-    .presentation p{
-        font-size: large;
-    }
-    .quest{
-        width: min-content;
-    }
-    footer .contact{
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        column-gap: 20px;
-    }
-    section.content-bdy{
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 0px;
-    }
-    .content-bdy .content{
-        border-radius: 0px 0px 20px 20px;
-        text-align: center;
-        font-size: large;
-        padding: 10px;
-    }
-    .content-bdy .red{
-        padding: 0px;
-        font-size: 40px;
-    }
-    .who{
-        width: 80%;
-    }
-    .logos-head{
-        grid-template-columns: 1fr;
-        row-gap: 25px;
-    }
-    div.content-counter .numbers{
-        font-size: xx-large;
-    }
-    div.content-counter .names{
-        font-size: medium;
-    }
-    div.content-counter{
-        width: 100%;
-        border-radius: 10px;
+    iframe{
+        width: 350px;
+        height: 190px;
     }
 }
